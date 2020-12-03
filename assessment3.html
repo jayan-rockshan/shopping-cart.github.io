@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asssessment-page</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<!--header-->
+    <div class="header">
+        <h1 class="pot">
+            welcome to men's page
+        </h1>
+        <ul class="list">
+            <li class="active">
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="assessment1.html">kids</a>
+            </li>
+            <li>
+                <a href="assessment2.html">women</a>
+            </li>
+            <li>
+                <a href="assessment4.html">old parties</a>
+            </li>
+        </ul>
+    </div>
+
+<!--image-->
+    <div class="image">
+        <img src="images/men1.jpg" alt="sample" width="100%" height="350px">
+    </div>
+<!--total;-->
+    <div class="cart">
+        <h3 class="tits">
+            My articles
+        </h3>
+        <ul id="items"></ul> 
+        <h3 id="total" style="text-align: right;">
+            Total: 0 $
+        </h3>
+    </div>
+<!--content-->
+    <div class="content">
+        <h2 class="ti">
+            T-shirt collection
+        </h2>
+            <div class="container">
+                <div class="articles">
+                    <div>
+                        <img src="images/men111.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand1">
+                                Nike
+                            </h3>
+                            <h4 id="price1">
+                                19.90
+                            </h4>
+                            <h4>
+                                $
+                            </h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                            <select id="size1" name="size1" onclick="deleteE('message1')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(1)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message1"></p>
+                    </div>
+                    <div>
+                        <img src="images/men2.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand2">Levi's</h3>
+                            <h4 id="price2">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                            <select id="size2" name="size2" onclick="deleteE('message2')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(2)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message2"></p>
+                    </div>
+                    <div>
+                        <img src="images/men3.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand3">Puma</h3>
+                            <h4 id="price3">16.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                            <select id="size3" name="size3" onclick="deleteE('message3')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(3)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message3"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--second chart-->
+            <h2 class="ti">Trouses collection</h2>
+            <div class="container">
+                <div class="articles">
+                    <div>
+                        <img src="images/men4.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand4">Nike</h3>
+                            <h4 id="price4">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                            <select id="size4" name="size4" onclick="deleteE('message4')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(4)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message4"></p>
+                    </div>
+                    <div>
+                        <img src="images/men5.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand5">Levi's</h3>
+                            <h4 id="price5">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity5" name="quantity5" min="1" max="99" value="1">
+                            <select id="size5" name="size5" onclick="deleteE('message5')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(5)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message5"></p>
+                    </div>
+                    <div>
+                        <img src="images/men6.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand6">Puma</h3>
+                            <h4 id="price6">16.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity6" name="quantity6" min="1" max="99" value="1">
+                            <select id="size6" name="size6" onclick="deleteE('message6')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(6)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message6"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--third chart-->
+            <h2 class="ti">Shirt collection</h2>
+            <div class="container">
+                <div class="articles">
+                    <div>
+                        <img src="images/men7.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand7">Nike</h3>
+                            <h4 id="price7">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity7" name="quantity7" min="1" max="99" value="1">
+                            <select id="size7" name="size7" onclick="deleteE('message7')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(7)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message7"></p>
+                    </div>
+                    <div>
+                        <img src="images/men8.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand8">Levi's</h3>
+                            <h4 id="price8">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity8" name="quantity8" min="1" max="99" value="1">
+                            <select id="size8" name="size8" onclick="deleteE('message8')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(8)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message8"></p>
+                    </div>
+                    <div>
+                        <img src="images/men9.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand9">Puma</h3>
+                            <h4 id="price9">16.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity9" name="quantity9" min="1" max="99" value="1">
+                            <select id="size9" name="size9" onclick="deleteE('message9')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(9)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message9"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!--fouth chart-->
+            <h2 class="ti">Other collection</h2>
+            <div class="container">
+                <div class="articles">
+                    <div>
+                        <img src="images/men10.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand10">Nike</h3>
+                            <h4 id="price10">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity10" name="quantity10" min="1" max="99" value="1">
+                            <select id="size10" name="size10" onclick="deleteE('message10')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(10)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message10"></p>
+                    </div>
+                    <div>
+                        <img src="images/men11.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand11">Levi's</h3>
+                            <h4 id="price11">19.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantit11" name="quantity11" min="1" max="99" value="1">
+                            <select id="size11" name="size11" onclick="deleteE('message11')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(11)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message11"></p>
+                    </div>
+                    <div>
+                        <img src="images/men12.jpg">
+                        <div class="prod">
+                            <h3 class="tit" id="brand12">Puma</h3>
+                            <h4 id="price12">16.90</h4>
+                            <h4>$</h4>
+                        </div>
+                        <div class="inputs">
+                            <input type="number" id="quantity12" name="quantity12" min="1" max="99" value="1">
+                            <select id="size12" name="size12" onclick="deleteE('message12')">
+                                <option value="size" disabled selected>Size</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <div>
+                                <button class="addTo" onclick="add(12)">Add</button>
+                            </div>
+                        </div>
+                        <p id="message12"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <!--footer-->
+<div class="footer">
+    </div>
+<script src="test.js"></script>
+</body>
+</html>
